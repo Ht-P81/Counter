@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape android:shape="oval">
+            <!--<solid android:color="#FFA000"/>-->
+            <gradient
+                android:startColor="@color/purple_500"
+                android:endColor="@color/purple_200"
+                android:gradientRadius="80%p"
+                android:centerX="0.75"
+                android:centerY="0.75"
+                android:type="radial"/>
+
+            <stroke
+                android:width="@dimen/borde_boton"
+                android:color="#6224F6"/>
+
+            <size
+                android:width="@dimen/medidas_boton"
+                android:height="@dimen/medidas_boton"/>
+
+            <padding
+                android:top="@dimen/common_padding_minimos"
+                android:left="@dimen/common_padding_minimos"
+                android:right="@dimen/common_padding_minimos"
+                android:bottom="@dimen/common_padding_minimos"/>
+
+        </shape>
+    </item>
+
+    <!--Cuando pulsamos el boton, especficaciones-->
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <!--<solid android:color="#F8E2AC"/>-->
+
+            <gradient
+                android:startColor="#AA7DEA"
+                android:endColor="#E7DDF3"
+                android:gradientRadius="80%p"
+                android:centerX="0.25"
+                android:centerY="0.25"
+                android:type="radial"/>
+
+            <stroke
+                android:width="@dimen/borde_boton"
+                android:color="#8CF1DD"/>
+
+        </shape>
+    </item>
+</selector>
